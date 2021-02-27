@@ -76,5 +76,9 @@ After deleting the dilation part from first method we are calculating the contou
 <img width="800" height="300" src="Images/results2.png">
 </p>
 
+**Note :** For a better understanding of the two methods you can check the two scripts [*img_diff1.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff1.py) and [*img_diff2.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff2.py) which are having all the necessary comments for a better explanation of each method's step.
+
+Check also the youtube video : [Spot the differences](...)
+
 ## Author
 * **Konstantinos Thanos**
