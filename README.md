@@ -33,7 +33,7 @@ diff = cv2.absdiff(gray1, gray2)
 cv2.imshow("diff(img1, img2)", diff)
 ```
 
-Apply threshold. Apply both THRESH_BINARY and THRESH_OTSU
+Apply threshold. Apply both THRESH_BINARY and THRESH_OTSU.
 ```python
 thresh = cv2.threshold(diff, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 cv2.imshow("Threshold", thresh)
