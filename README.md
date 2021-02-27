@@ -8,7 +8,7 @@ Spot the differences between two images using Python and OpenCV
 This program can spot-find the differences between two images. The user loads to the program 2 images that are mostly the same but also have some small differences. By running the program user gets both images side by side highlighting the differences.
  
 ## First Method
-### Using *cv2.absdiff*
+### Using *cv2.absdiff*. Script [*img_diff1.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff1.py)
 We are going to use images *city1.jpg* and *city2.jpg* for a better understanding.
 First we are loading the two images
 ```python
@@ -43,7 +43,7 @@ contours = imutils.grab_contours(contours)
 ```
 
 ## Second Method
-### Using *compare_ssim*
+### Using *compare_ssim*. Script [*img_diff2.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff2.py)
 We are following the steps of the First Method we some small changes. Instead of **cv2.absdiff**, now we are computing the full structural similarity (*similar*) between the two gray images. Also we must convert *diff* array in range [0, 255]
 ```python
 (simalr, diff) = compare_ssim(gray1, gray2, full=True)
