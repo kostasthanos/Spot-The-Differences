@@ -41,15 +41,16 @@ Finally we are calculating the contours and draw rectangles in both images which
 contours = cv2.findContours(dilate.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 contours = imutils.grab_contours(contours)
 ```
+The results are the following : 
 
 ## Second Method
 ### Using *compare_ssim*. Script [*img_diff2.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff2.py)
-We are following the steps of the First Method we some small changes. Instead of **cv2.absdiff**, now we are computing the full structural similarity (*similar*) between the two gray images. Also we must convert *diff* array in range [0, 255]
+We are following the steps of the First Method with some small changes. Instead of **cv2.absdiff**, now we are computing the full structural similarity (*similar*) between the two gray images. Also we must convert *diff* array in range [0, 255].
 ```python
 (simalr, diff) = compare_ssim(gray1, gray2, full=True)
 diff = (diff*255).astype("uint8")
 ```
-Now we should delte the dilation part from first method and continue with the contours calculation as before.
+After deleting the dilation part from first method we are calculating the contours as before. The results are the following :
 
 
 ## Author
