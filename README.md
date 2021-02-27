@@ -1,5 +1,6 @@
 # Spot-The-Differences-OpenCV
-Spot the differences between two images using Python and OpenCV
+Spot the differences between two images using Python and OpenCV. For a better and visual understanding of this project and it's concepts, watch the video : [Spot the Differences]()
+
 <p align="center">
 <img width="400" height="300" src="Images/spot_logo.png ">
 </p>
