@@ -9,13 +9,13 @@ This program can spot-find the differences between two images. The user loads to
  
 ## First Method
 ### Using *cv2.absdiff*. Script [*img_diff1.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff1.py)
-We are going to use images *city1.jpg* and *city2.jpg* from folder [Images](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/tree/main/Images) for a better understanding.
+We are going to use images *city1.jpg* and *city2.jpg* from folder [Images](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/tree/main/Images) for a better understanding.  
 First we are loading the two images
 ```python
 img1 = cv2.imread('path_to_image_1')
 img2 = cv2.imread('path_to_image_2')
 ```
-Then convert both images to grayscale format
+Then we are converting both images to grayscale format
 ```python
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
