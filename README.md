@@ -54,7 +54,7 @@ contours = imutils.grab_contours(contours)
 
 The results are the following : 
 <p align="center">
-<img width="800" height="300" src="Images/results1.jpg">
+<img width="800" height="300" src="Images/results1.png">
 </p>
 
 ## Second Method
