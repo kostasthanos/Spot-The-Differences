@@ -10,17 +10,17 @@ This program can spot-find the differences between two images. The user loads to
 ## First Method
 ### Using *cv2.absdiff*. Script [*img_diff1.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff1.py)
 We are going to use images *city1.jpg* and *city2.jpg* from folder [Images](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/tree/main/Images) for a better understanding.  
-First we are loading the two images
+First we are loading the two images.
 ```python
 img1 = cv2.imread('path_to_image_1')
 img2 = cv2.imread('path_to_image_2')
 ```
-Then we are converting both images to grayscale format
+Then we are converting both images to grayscale format.
 ```python
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 ```
-Now it's time to find the absolute difference between the two images (arrays)
+Now it's time to find the absolute difference between the two images (arrays).
 ```python
 diff = cv2.absdiff(gray1, gray2)
 cv2.imshow("diff(img1, img2)", diff)
@@ -30,13 +30,13 @@ Apply threshold. Apply both THRESH_BINARY and THRESH_OTSU
 thresh = cv2.threshold(diff, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 cv2.imshow("Threshold", thresh)
 ```
-We are going to use 2 iterations of dilation in order to increase the white region in the image.
+We are going to use 2 iterations of dilation in order to increase the white region in threshold.
 ```python
 kernel = np.ones((5,5), np.uint8) 
 dilate = cv2.dilate(thresh, kernel, iterations=2) 
 cv2.imshow("Dilate", dilate)
 ```
-Finally we are calculating the contours and draw rectangle in both images which are corresponding to the differences between the 2 images.
+Finally we are calculating the contours and draw rectangles in both images which are corresponding to the differences between the 2 images.
 ```python
 contours = cv2.findContours(dilate.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 contours = imutils.grab_contours(contours)
