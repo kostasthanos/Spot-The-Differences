@@ -64,11 +64,13 @@ Let's load our two images.
 <img width="400" height="300" src="Images/camels1.jpg">
 <img width="400" height="300" src="Images/camels2.jpg">
 </p>
+
 We are following the steps of the First Method with some small changes. Instead of **cv2.absdiff**, now we are computing the full structural similarity (*similar*) between the two gray images. Also we must convert *diff* array in range [0, 255].
 ```python
 (simalr, diff) = compare_ssim(gray1, gray2, full=True)
 diff = (diff*255).astype("uint8")
 ```
+
 After deleting the dilation part from first method we are calculating the contours as before. The results are the following :
 <p align="center">
 <img width="800" height="300" src="Images/results2.png">
