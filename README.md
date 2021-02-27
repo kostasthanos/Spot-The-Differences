@@ -6,15 +6,20 @@ Spot the differences between two images using Python and OpenCV
 
 ## Main Idea
 This program can spot-find the differences between two images. The user loads to the program 2 images that are mostly the same but also have some small differences. By running the program user gets both images side by side highlighting the differences.
- 
+
+We will check two methods. For the first method we will use images *city1.jpg* and *city2.jpg* (Photo by [Fede Roveda](https://www.pexels.com/@fede-roveda-1461538?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/brown-and-white-concrete-building-4179480/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)) and for the second we will use images *camels1.jpg* and *camels2.jpg* (Photo by [Travel Photography](https://www.pexels.com/@travel-photography-1146107?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/camels-eating-plants-2183784/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels))
+
 ## First Method
 ### Using *cv2.absdiff*. Script [*img_diff1.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff1.py)
-We are going to use images *city1.jpg* and *city2.jpg* from folder [Images](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/tree/main/Images) for a better understanding.  
 First we are loading the two images.
 ```python
 img1 = cv2.imread('path_to_image_1')
 img2 = cv2.imread('path_to_image_2')
 ```
+<p align="center">
+<img width="400" height="300" src="Images/city1.jpg">
+<img width="400" height="300" src="Images/city2.jpg">
+</p>
 Then we are converting both images to grayscale format.
 ```python
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
