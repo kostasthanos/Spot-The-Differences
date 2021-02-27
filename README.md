@@ -5,7 +5,7 @@ Spot the differences between two images using Python and OpenCV
 </p>
 
 ## Main Idea
-This program can spot-find the differences between two images. The user loads to the program 2 images that are mostly the same but also have some small differences. By running the program user gets both images side by side highlighting the differences.
+This program can spot-find the differences between two images. The user loads to the program 2 images that are mostly the same but also have some small differences. By running the program user gets both images side by side with their differences highlighted.
 
 We will check two methods. For the first method we will use images *city1.jpg* and *city2.jpg* (Photo by [Fede Roveda](https://www.pexels.com/@fede-roveda-1461538?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/brown-and-white-concrete-building-4179480/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)) and for the second we will use images *camels1.jpg* and *camels2.jpg* (Photo by [Travel Photography](https://www.pexels.com/@travel-photography-1146107?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/camels-eating-plants-2183784/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels))
 
