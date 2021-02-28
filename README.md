@@ -70,7 +70,8 @@ We are following the steps of the First Method with some small changes. Instead 
 diff = (diff*255).astype("uint8")
 ```
 
-After deleting the dilation part from first method we are calculating the contours as before. The results are the following :
+After deleting the dilation part from first method we are calculating the contours as before.  
+The results are the following :
 <p align="center">
 <img width="800" height="300" src="Images/results2.png">
 </p>
