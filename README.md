@@ -78,7 +78,7 @@ The results are the following :
 
 **Note :** For a better understanding of the two methods you can check the two scripts [*img_diff1.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff1.py) and [*img_diff2.py*](https://github.com/kostasthanos/Spot-The-Differences-OpenCV/blob/main/img_diff2.py) which are having all the necessary comments for a better explanation of each method's step.
 
-Check also the youtube video : [Spot the differences](https://www.youtube.com/watch?v=Ph4lI-LxzDg)
+Check also the youtube video : [Spot the differences](https://www.youtube.com/watch?v=Ph4lI-LxzDg).
 
 ## Author
 * **Konstantinos Thanos**
