@@ -1,3 +1,11 @@
+#===========================#
+#    Spot the Differences   #
+#   with Python and OpenCV  #
+#===========================#
+#    Konstantinos Thanos    #
+#    Mathematician, Msc     #
+#===========================#
+
 # Import packages
 import cv2
 import imutils
